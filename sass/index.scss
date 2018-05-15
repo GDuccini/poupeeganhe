@@ -1,0 +1,232 @@
+//arquivos SASS importados
+@import 'variaveis';
+@import 'mixins';
+
+.banner {
+	@include banner($comp1, $img1);
+}
+
+.navbar {
+	border: 1px solid red;
+	//width: 90% !important;
+}
+
+.navbar-nav {
+	width: 100%;
+	li {
+		&:hover {
+			background: lighten($navcor, 25);
+		}
+	}
+}
+
+.secoes {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.artigos {
+	padding-bottom: 5vh;
+	text-align:center;
+	h1 {
+		display: inline-block;
+		color: #696969;
+		border-bottom: 4px solid #D3D3D3;
+		font-size: 10vw;
+	}
+}
+
+.img-box {
+	width: 80vw;
+	margin: auto;
+	padding-bottom: 30px;
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.nav-link {
+	font-size: 14px;
+}
+
+.tabcell {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.tablista, #youtube-tab:focus, #sites-tab:focus, #livros-tab:focus {
+	background-color: $tablista;
+}
+
+#sites {
+	//border: 1px solid purple;
+}
+
+.ind-sites {
+	width: 100%;
+	//border: 1px solid red;
+	margin: 0 auto;
+}
+
+.videos {
+	width: 100%;
+	margin: 0 auto;
+	//border: 1px solid red;
+}
+
+.video {
+	width: 90%;
+	margin: 20px auto;
+	//border: 1px solid black;
+	h6 {
+ 		margin-top: 20px;
+ 	}
+ 	p {
+		font-family: Trebuchet, Verdana;
+ 	}
+}
+
+.websites {
+	width: 100%;
+	margin-top: 20px !important;
+	//border: 1px dotted black;
+	img {
+		margin-bottom: 20px !important;
+	}
+	p{
+		margin-bottom: 5px;
+		font-family: Trebuchet, Verdana;
+	}	
+}
+
+#livros {
+	padding: 3%;
+	img{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	p{
+		margin-bottom: 0;
+		padding-bottom:0;
+	}
+}
+
+.ind-livros {
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 3%;
+}
+
+.livro3 {
+	margin-right: 0;
+}
+
+.prefoot {
+	background-color: #BEBEBE;
+	p{
+		margin-bottom: 10px;
+		font-family: Trebuchet, Verdana;
+	}
+}
+
+.footer-copyright {
+	color: #ffffff;
+	background-color: #696969;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.autores {
+  	color: #696969;
+	font-family: "Comic Sans MS", "Lucida Sans";
+}
+
+.designer, .copyright{
+	display: block;
+}
+
+@media (min-width: 576px) 
+	{ 
+		.secoes {
+			width: 100%;
+			margin: 2% auto;
+			padding:0;
+		}
+
+		.img-box {
+			width: 40vw;
+		}
+
+		.nav-link {
+			font-size: 16px;
+		}
+		.ind-livros {
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+		.websites {
+			margin: 1% auto;
+		}
+
+}
+
+@media (min-width: 768px) 
+	{ 
+		.banner {
+			@include banner($comp2, $img2);
+		}
+
+		.navbar-nav {
+			li {
+				width: (100% / 5);
+			}
+		}
+
+		.secoes {
+			width: 100%;
+			margin: 3% auto;
+		}
+
+		.img-box {
+			width: 22vw;
+		}
+
+		.artigos h1 {
+			font-size: 3vw;
+		}
+		.nav-link {
+			font-size: 20px;
+		}
+
+		.tablista {
+			height: 80vh;
+		}
+
+		.websites {
+			width: 100%;
+			margin-top: 10px;
+			img {
+				margin-bottom: 0;
+			}
+			p{
+				margin-bottom: 0;
+				font-family: Trebuchet, Verdana;
+			}	
+		}
+
+		.designer, .copyright{
+			display: inline-block;
+		}
+}
+
+@media (min-width: 992px) 
+	{ 
+		.banner {
+			@include banner($comp3, $img3);
+		}
+	}

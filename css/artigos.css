@@ -1,0 +1,41 @@
+.wrap {
+  width: 96%;
+  margin: 0 auto; }
+
+/*.main, .aside {
+	border: 1px solid black;
+}*/
+.main h1 {
+  font-size: 1.5rem; }
+
+/*.img {
+	border: 1px solid black
+}*/
+.info {
+  position: static; }
+  .info .autor {
+    padding-top: 20px;
+    position: static;
+    bottom: auto; }
+  .info .data {
+    position: static;
+    bottom: auto; }
+
+@media (min-width: 576px) {
+  .main h1 {
+    font-size: 2.5rem; } }
+@media (min-width: 768px) {
+  .main h1 {
+    font-size: 3rem; }
+
+  .info {
+    position: relative; }
+    .info .autor {
+      padding-top: 0;
+      position: absolute;
+      bottom: 30px; }
+    .info .data {
+      position: absolute;
+      bottom: 0; } }
+
+/*# sourceMappingURL=artigos.css.map */

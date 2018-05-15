@@ -1,0 +1,7 @@
+@mixin banner ($comp, $img){
+	height: $comp;
+	background: $img;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
